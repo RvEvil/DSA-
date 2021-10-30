@@ -1,0 +1,56 @@
+An array in Java is a set of variables referenced by using a single variable name combined with an index number. Each item of an array is an element. All the elements in an array must be of the same type. Thus, the array itself has a type that specifies what kind of elements it can contain. An int array can contain int values, for example, and a String array can contain strings.
+
+Written after the variable name, the index number is enclosed in brackets. So if the variable name is x, you could access a specific element with an expression like x[5].
+
+Index numbers start with 0 (zero) for the first element, so x[0] refers to the first element.
+
+Declaring an array
+Before you can create an array, you must declare a variable that refers to the array. This variable declaration should indicate the type of elements stored by the array, followed by a set of empty brackets, like this:
+
+String[] names;
+Here, a variable named names is declared. Its type is an array of String objects.
+
+You can also put the brackets on the variable name rather than the type. The following two statements both create arrays of int elements:
+
+int[] array1;   // an array of int elements
+int array2[];   // another array of int elements
+Declaring an array doesn’t actually create the array. To do that, you must use the new keyword, followed by the array type. For example:
+
+String[] names;
+names = new String[10];
+Or, more concisely:
+
+String[] names = new String[10];
+Initializing array elements
+You can initialize an array by assigning values one by one, like this:
+
+String[] days = new Array[7];
+Days[0] = "Sunday";
+Days[1] = "Monday";
+Days[2] = "Tuesday";
+Days[3] = "Wednesday";
+Days[4] = "Thursday";
+Days[5] = "Friday";
+Days[6] = "Saturday";
+Or you can use the following shorthand:
+
+String[] days = { "Sunday", "Monday", "Tuesday",
+                  "Wednesday", "Thursday",
+                  "Friday", "Saturday" };
+Here, each element to be assigned to the array is listed in an array initializer. The number of values listed in the initializer determines the length of the array that the initializer creates.
+
+Using loops with arrays
+Frequently, arrays are processed within for loops. For example, here’s a for loop that creates an array of 100 random numbers, with values ranging from 1 to 100:
+
+int[] numbers = new int[100];
+for (int i = 0; i < 100; i++)
+    numbers[i] = (int)(Math.random() * 100) + 1;
+Java also provides a special type of for loop called an enhanced for loop that’s designed to simplify loops that process arrays. An enhanced for loop allows you to skip the index variable, as in this example:
+
+for (type identifier : array)
+{
+    statements...
+}
+int[] numbers = new int[100];
+for (int number : numbers
+    number = (int)(Math.random() * 100) + 1;
