@@ -1,6 +1,6 @@
 
 
-<div id="top"> # DSA- </div>
+<div id="top"></div>
 
 
 
@@ -23,7 +23,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/RvEvil/DSA-">
     <img src="images/java.png" alt="Logo" width="130" height="80">
   </a>
 
@@ -49,16 +49,18 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project">About The Project</a> </li>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      
+    </li>
     
+   
     <li><a href="#contributing">Contributing</a></li>
     
     <li><a href="#contact">Contact</a></li>
     
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -103,13 +105,13 @@ Project Link: [https://github.com/RvEvil/DSA-](https://github.com/RvEvil/DSA-/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/RvEvil/DSA-.svg?style=for-the-badge
 [contributors-url]: https://github.com/RvEvil/DSA-/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/RvEvil/DSA-.svg?style=for-the-badge
 [forks-url]: https://github.com/RvEvil/DSA-/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/RvEvil/DSA-.svg?style=for-the-badge
 [stars-url]: https://github.com/RvEvil/DSA-/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/RvEvil/DSA-.svg?style=for-the-badge
 [issues-url]: https://github.com/RvEvil/DSA-/issues
 
 Submit your pr here to contribute and start your open source contributation.
