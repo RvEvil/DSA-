@@ -1,0 +1,77 @@
+String
+The String object is used to represent and manipulate a sequence of characters.
+
+Description
+Strings are useful for holding data that can be represented in text form. Some of the most-used operations on strings are to check their length, to build and concatenate them using the + and += string operators, checking for the existence or location of substrings with the indexOf() method, or extracting substrings with the substring() method.
+
+Creating strings
+Strings can be created as primitives, from string literals, or as objects, using the String() constructor:
+
+const string1 = "A string primitive";
+const string2 = 'Also a string primitive';
+const string3 = `Yet another string primitive`;
+Copy to Clipboard
+const string4 = new String("A String object");
+Copy to Clipboard
+String primitives and string objects can be used interchangeably in most situations. See "String primitives and String objects" below.
+
+String literals can be specified using single or double quotes, which are treated identically, or using the backtick character `. This last form specifies a template literal: with this form you can interpolate expressions.
+
+Character access
+There are two ways to access an individual character in a string. The first is the charAt() method:
+
+return 'cat'.charAt(1) // returns "a"
+Copy to Clipboard
+The other way (introduced in ECMAScript 5) is to treat the string as an array-like object, where individual characters correspond to a numerical index:
+
+return 'cat'[1] // returns "a"
+Copy to Clipboard
+When using bracket notation for character access, attempting to delete or assign a value to these properties will not succeed. The properties involved are neither writable nor configurable. (See Object.defineProperty() for more information.)
+
+Comparing strings
+In C, the strcmp() function is used for comparing strings. In JavaScript, you just use the less-than and greater-than operators:
+
+let a = 'a'
+let b = 'b'
+if (a < b) { // true
+  console.log(a + ' is less than ' + b)
+} else if (a > b) {
+  console.log(a + ' is greater than ' + b)
+} else {
+  console.log(a + ' and ' + b + ' are equal.')
+}
+Copy to Clipboard
+A similar result can be achieved using the localeCompare() method inherited by String instances.
+
+Note that a == b compares the strings in a and b for being equal in the usual case-sensitive way. If you wish to compare without regard to upper or lower case characters, use a function similar to this:
+
+function isEqual(str1, str2)
+{
+    return str1.toUpperCase() === str2.toUpperCase()
+} // isEqual
+Copy to Clipboard
+Upper case is used instead of lower case in this function, due to problems with certain UTF-8 character conversions.
+
+String primitives and String objects
+Note that JavaScript distinguishes between String objects and primitive string values. (The same is true of Boolean and Numbers.)
+
+String literals (denoted by double or single quotes) and strings returned from String calls in a non-constructor context (that is, called without using the new keyword) are primitive strings. JavaScript automatically converts primitives to String objects, so that it's possible to use String object methods for primitive strings. In contexts where a method is to be invoked on a primitive string or a property lookup occurs, JavaScript will automatically wrap the string primitive and call the method or perform the property lookup.
+
+let s_prim = 'foo'
+let s_obj = new String(s_prim)
+
+console.log(typeof s_prim) // Logs "string"
+console.log(typeof s_obj)  // Logs "object"
+Copy to Clipboard
+String primitives and String objects also give different results when using eval(). Primitives passed to eval are treated as source code; String objects are treated as all other objects are, by returning the object. For example:
+
+let s1 = '2 + 2'              // creates a string primitive
+let s2 = new String('2 + 2')  // creates a String object
+console.log(eval(s1))         // returns the number 4
+console.log(eval(s2))         // returns the string "2 + 2"
+Copy to Clipboard
+For these reasons, the code may break when it encounters String objects when it expects a primitive string instead, although generally, authors need not worry about the distinction.
+
+A String object can always be converted to its primitive counterpart with the valueOf() method.
+
+console.log(eval(s2.valueOf()))  // returns the number 4
