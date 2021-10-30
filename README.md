@@ -16,8 +16,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
@@ -52,23 +51,13 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+    
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    
   </ol>
 </details>
 
@@ -105,9 +94,9 @@ We will love to add your code to our Repo
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@RvEvil10](https://twitter.com/RvEvil10) 
+[@RvEvil10](https://twitter.com/RvEvil10) 
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/RvEvil/DSA-/)
+Project Link: [https://github.com/RvEvil/DSA-](https://github.com/RvEvil/DSA-/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
